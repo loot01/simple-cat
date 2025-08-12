@@ -1,5 +1,5 @@
 # simple-cat
-A simple recreating of the cat command, written entirely in C
+A simple recreation of the cat command, written entirely in C
 
 ## Compilation
 `make`
