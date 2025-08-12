@@ -143,8 +143,10 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 	for (int i = 1; i < argc; i++)
+		handle_flags(argv[i], flags);
+	for (int i = 1; i < argc; i++)
 	{
-		if (handle_flags(argv[i], flags) == 1)
+		if (argv[i][0] == '-')
 			continue ;
 		if (strcmp(argv[i], "-") == 0)
 			handle_stdin(buf, flags);
